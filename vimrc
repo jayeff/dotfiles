@@ -6,8 +6,7 @@ filetype plugin indent on
 
 " General --------------
 set nocompatible " disable vi compatibility
-set modelines=0 " security see
-http://www.techrepublic.com/blog/security/turn-off-modeline-support-in-vim/4476
+set modelines=0 " security see http://www.techrepublic.com/blog/security/turn-off-modeline-support-in-vim/4476
 set guioptions-=T " go away toolbar
 colorscheme BusyBee
 set history=500 " i like history
