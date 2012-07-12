@@ -15,7 +15,7 @@ ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/vim ~/.vim
 
 add a submodule
-git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive
+git submodule add http://github.com/tpope/vim-fugitive.git vim/bundle/fugitive
 initialize all submodules
 git submodule update --init
 fetch update for all submodules
