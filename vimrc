@@ -8,7 +8,7 @@ filetype plugin indent on
 set nocompatible " disable vi compatibility
 set modelines=0 " security see http://www.techrepublic.com/blog/security/turn-off-modeline-support-in-vim/4476
 set guioptions-=T " go away toolbar
-colorscheme BusyBee
+colorscheme molokai
 set history=500 " i like history
 set laststatus=2 " statusline ftw
 let mapleader = ',' " leader key
