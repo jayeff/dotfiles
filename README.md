@@ -1,18 +1,13 @@
 dotfiles
 ========
 
-*in progress*
-
 todo:
-* convert current vimrc
-* vim: merge work/private
-* vim: plugins as submodules
-* add ackrc
 * automate process
 
 some notes:
 ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/vim ~/.vim
+ln -s ~/dotfiles/ackrc ~/.ackrc
 
 add a submodule
 git submodule add http://github.com/tpope/vim-fugitive.git vim/bundle/fugitive
@@ -23,3 +18,4 @@ git submodule foreach git pull origin master
 
 links:
 http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+http://betterthangrep.com/documentation/
