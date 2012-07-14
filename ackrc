@@ -10,5 +10,5 @@
 
 # changes to existing typs
 --type-add=js=.coffee,.eco
---type-add=cucumber=.feature
 --type-add=css=.scss
+--type-set=cucumber=.feature
