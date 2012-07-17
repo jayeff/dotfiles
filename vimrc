@@ -17,6 +17,10 @@ set timeoutlen=10000 " extra long to notice overrides
 set cpoptions+=$ " indicate end of change command with $ sign
 set autoread " load changed files automatically
 
+" Backup ---------------
+set backupdir=~/dotfiles/vim/tmp,.
+set directory=~/dotfiles/vim/tmp,.
+
 " Searching ------------
 set ignorecase " ignore case when everything is lowercase
 set smartcase " case sensitive when there is a capital letter
