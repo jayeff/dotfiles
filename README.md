@@ -9,9 +9,9 @@ ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/vim ~/.vim
 ln -s ~/dotfiles/ackrc ~/.ackrc
 
-add a submodule
+add a submodule (eg fugitive)
 git submodule add http://github.com/tpope/vim-fugitive.git vim/bundle/fugitive
-initialize all submodules
+initialize and update all submodules
 git submodule update --init
 fetch update for all submodules
 git submodule foreach git pull origin master
