@@ -32,7 +32,7 @@ set wildignore+=*/.hg/*
 
 " ctrlp settings
 let g:ctrlp_custom_ignore = {
-  \ 'dir': '.git$\|.rsync_cache$\|coverage$\|log\|tmp$'
+  \ 'dir': '.git$\|.rsync_cache$\|coverage$\|log$\|tmp$\|spec/cassettes$'
   \ }
 
 " Tabs -----------------
