@@ -1,14 +1,16 @@
 # case sensitive only when mixed case
 --smart-case
 # always search text-files
-#--text # actually that's a stupid idea :)
+--text
 
 # ignore rules
 --ignore-dir=coverage/rcov
 --ignore-dir=.rsync_cache
 --ignore-dir=tmp
+--nodata
 
 # changes to existing typs
 --type-add=js=.coffee,.eco
 --type-add=css=.scss
 --type-set=cucumber=.feature
+--type-set=data=.data
