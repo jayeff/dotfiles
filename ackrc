@@ -7,9 +7,10 @@
 --ignore-dir=coverage/rcov
 --ignore-dir=.rsync_cache
 --ignore-dir=tmp
+--ignore-dir=log
 --nodata
 
-# changes to existing typs
+# custom type definitions
 --type-add=js=.coffee,.eco
 --type-add=css=.scss
 --type-set=cucumber=.feature
