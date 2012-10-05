@@ -6,6 +6,7 @@
 --ignore-dir=.rsync_cache
 --ignore-dir=tmp
 --ignore-dir=log
+--ignore-dir=vendor
 --nodata
 
 # custom type definitions
