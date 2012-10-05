@@ -1,7 +1,5 @@
 # case sensitive only when mixed case
 --smart-case
-# always search text-files
---text
 
 # ignore rules
 --ignore-dir=coverage/rcov
