@@ -4,6 +4,7 @@
 # ignore rules
 --ignore-dir=coverage/rcov
 --ignore-dir=.rsync_cache
+--ignore-dir=public/assets
 --ignore-dir=tmp
 --ignore-dir=log
 --ignore-dir=vendor
