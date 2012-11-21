@@ -31,7 +31,7 @@ set wildmode=list:longest " terminal like tab completion
 set wildignore+=*/.hg/*
 
 " ctrlp settings
-let g:ctrlp_switch_buffer = 'e'
+let g:ctrlp_switch_buffer = 'e' " never switch tabs
 let g:ctrlp_custom_ignore = {
   \ 'dir': '.git$\|.rsync_cache$\|coverage$\|log$\|tmp$\|spec/cassettes$'
   \ }
