@@ -31,3 +31,6 @@
 [submodule "vim/bundle/vim-ruby"]
 	path = vim/bundle/vim-ruby
 	url = http://github.com/vim-ruby/vim-ruby.git
+[submodule "vim/bundle/vim-rspec-focus"]
+	path = vim/bundle/vim-rspec-focus
+	url = https://github.com/unifieddialog/vim-rspec-focus.git
