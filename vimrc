@@ -69,6 +69,9 @@ noremap   <Right>  <NOP>
 " alternativ exit insert mode
 inoremap jj <Esc>
 nnoremap gp `[v`] " reselect paste
+" for vim-rspec-focus
+:nnoremap <leader>t :AddFocusTag<CR>
+:nnoremap <leader>r :RemoveAllFocusTags<CR>
 
 " Statusline
 if has("statusline")
