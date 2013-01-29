@@ -4,6 +4,7 @@
 [alias]
 	hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
 	st = status -sb
+	ctags = !.git/hooks/ctags
 [core]
 	excludesfile = /Users/jofa/.gitignore_global
 [rebase]
@@ -12,3 +13,5 @@
 	helper = osxkeychain
 [push]
 	default = simple
+[init]
+	templatedir = ~/.git_template
