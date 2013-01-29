@@ -1,14 +1,13 @@
 dotfiles
 ========
 
-todo:
-* automate process
-
-some notes:
+install notes:
 
     ln -s ~/dotfiles/vimrc ~/.vimrc
     ln -s ~/dotfiles/vim ~/.vim
     ln -s ~/dotfiles/ackrc ~/.ackrc
+    ln -s ~/dotfiles/gitconfig ~/.gitconfig
+    ln -s ~/dotfiles/gitignore_global ~/.gitignore_global
 
 add a submodule (eg fugitive)
 

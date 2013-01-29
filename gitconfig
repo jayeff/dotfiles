@@ -1,0 +1,14 @@
+[user]
+	name = Johannes Faigle
+	email = jo-f@gmx.at
+[alias]
+	hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+	st = status -sb
+[core]
+	excludesfile = /Users/jofa/.gitignore_global
+[rebase]
+	autosquash = true
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
