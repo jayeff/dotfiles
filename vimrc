@@ -17,6 +17,10 @@ set timeoutlen=10000 " extra long to notice overrides
 set cpoptions+=$ " indicate end of change command with $ sign
 set autoread " load changed files automatically
 
+" Line numbers
+set number
+" set relativenumber
+
 " Backup ---------------
 set backupdir=~/dotfiles/vim/tmp,.
 set directory=~/dotfiles/vim/tmp,.
@@ -90,9 +94,6 @@ endif
 "
 " " Scrolling
 " set scrolloff=3
-"
-" " Line numbers
-" set rnu " relative line numbers - maybe just with a leader if too annoying?
 "
 " let g:netrw_liststyle=3
 " let g:netrw_preview=1
