@@ -66,6 +66,11 @@ noremap   <Up>     <NOP>
 noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
+" hard mode
+noremap h <NOP>
+noremap j <NOP>
+noremap k <NOP>
+noremap l <NOP>
 " alternativ exit insert mode
 inoremap jj <Esc>
 nnoremap gp `[v`] " reselect paste
