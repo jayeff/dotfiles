@@ -84,10 +84,13 @@ nnoremap gp `[v`] " reselect paste
 :nnoremap <leader>t :AddFocusTag<CR>
 :nnoremap <leader>r :RemoveAllFocusTags<CR>
 
-" Statusline
+" Statusline -----------
 if has("statusline")
   set statusline=%<%f\ %h%m%r%=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
 endif
+
+" File Types -----------
+autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " maybe -----
 " " Don't move on */#
