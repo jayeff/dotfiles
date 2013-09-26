@@ -5,6 +5,7 @@
 	hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
 	st = status -sb
 	ctags = !.git/hooks/ctags
+	rewrite-branch = !git rebase -i $(git merge-base master HEAD)
 [core]
 	excludesfile = ~/.gitignore_global
 [rebase]
