@@ -2,7 +2,7 @@
 	name = Johannes Faigle
 	email = jo-f@gmx.at
 [alias]
-	hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+	hist = log --graph --branches --remotes --tags --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 	st = status -sb
 	ctags = !.git/hooks/ctags
 	rewrite-branch = !git rebase -i $(git merge-base master HEAD)
