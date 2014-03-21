@@ -34,12 +34,14 @@ set hlsearch " highlight
 
 " Wildmode
 set wildmode=list:longest " terminal like tab completion
-set wildignore+=*/.hg/*
+set wildignore+=.git,.hg " ignore version control directories
+set wildignore+=*.class,*.jar " java stuff
+set wildignore+=node_modules " vendored stuff
 
 " ctrlp settings
 let g:ctrlp_switch_buffer = 'e' " never switch tabs
 let g:ctrlp_custom_ignore = {
-  \ 'dir': '.git$\|.rsync_cache$\|coverage$\|log$\|tmp$\|spec/cassettes$'
+  \ 'dir': '.rsync_cache$\|coverage$\|log$\|tmp$\|spec/cassettes$'
   \ }
 
 " Tabs -----------------
