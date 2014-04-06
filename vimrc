@@ -93,6 +93,7 @@ endif
 
 " File Types -----------
 autocmd Filetype gitcommit setlocal spell textwidth=72
+autocmd FileType python setlocal shiftwidth=4 softtabstop=4 expandtab
 
 " maybe -----
 " " Don't move on */#
