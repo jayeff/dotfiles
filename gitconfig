@@ -3,6 +3,7 @@
 	email = jo-f@gmx.at
 [alias]
 	hist = log --graph --branches --remotes --tags --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	hist2 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --not --branches=release
 	st = status -sb
 	ctags = !.git/hooks/ctags
 	rewrite-branch = !git rebase -i $(git merge-base master HEAD)
