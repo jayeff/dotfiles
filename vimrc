@@ -1,11 +1,27 @@
-" load pathogen and append all bundles
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
-syntax enable
+" Vundle ---------------
+set nocompatible
+filetype off " required by vundle
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-commentary'
+
+Plugin 'mustache/vim-mustache-handlebars'
+
+call vundle#end()
 filetype plugin indent on
 
+
 " General --------------
-set nocompatible " disable vi compatibility
+syntax enable
 set modelines=0 " security see http://www.techrepublic.com/blog/security/turn-off-modeline-support-in-vim/4476
 set guioptions-=T " go away toolbar
 set guifont=Menlo\ Regular:h12
