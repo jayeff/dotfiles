@@ -3,7 +3,7 @@
 	email = jo-f@gmx.at
 [alias]
 	hist = log --graph --branches --remotes --tags --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
-	hist2 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --not --branches=release
+	hist2 = log --exclude=release --branches --exclude=ad-build/release --remotes --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 	st = status -sb
 	ctags = !.git/hooks/ctags
 	rewrite-branch = !git rebase -i $(git merge-base master HEAD)
@@ -20,5 +20,10 @@
 [pull]
 	rebase = preserve
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
