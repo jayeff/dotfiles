@@ -26,7 +26,7 @@ set modelines=0 " security see http://www.techrepublic.com/blog/security/turn-of
 set guioptions-=T " go away toolbar
 set guifont=Menlo\ Regular:h12
 set background=light
-colorscheme solarized
+colorscheme molokai
 set history=500 " i like history
 set laststatus=2 " statusline ftw
 let mapleader = ',' " leader key
