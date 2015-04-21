@@ -13,6 +13,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
+Plugin 'gabesoft/vim-ags'
 
 Plugin 'mustache/vim-mustache-handlebars'
 
