@@ -14,7 +14,6 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 Plugin 'gabesoft/vim-ags'
-
 Plugin 'mustache/vim-mustache-handlebars'
 
 call vundle#end()
@@ -80,6 +79,10 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 " the above flashes annoyingly while typing, be calmer in insert mode
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+
+function! TrimWhiteSpace()
+  %s/\s\+$//e
+endfunction
 
 " Mappings -------------
 " disable arrow keys
