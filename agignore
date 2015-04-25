@@ -1,0 +1,6 @@
+# javascript
+node_modules
+bower_components
+
+# logfiles
+*.log
