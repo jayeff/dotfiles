@@ -16,6 +16,9 @@ Plugin 'tpope/vim-commentary'
 Plugin 'gabesoft/vim-ags'
 Plugin 'mustache/vim-mustache-handlebars'
 
+" Colorschemes
+Plugin 'NLKNguyen/papercolor-theme'
+
 call vundle#end()
 filetype plugin indent on
 
