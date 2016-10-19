@@ -9,6 +9,7 @@
 	rewrite-branch = !git rebase -i $(git merge-base master HEAD)
 [core]
 	excludesfile = ~/.gitignore_global
+	editor = /usr/local/bin/vim
 [rebase]
 	autosquash = true
 [credential]
@@ -31,3 +32,5 @@
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
+[diff]
+	compactionheuristic = true
