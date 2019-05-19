@@ -1,42 +1,33 @@
-" Vundle ---------------
-set nocompatible
-filetype off " required by vundle
+" Plugins ---------------
+call plug#begin('~/.vim/plugged')
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-Plugin 'kien/ctrlp.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-commentary'
-Plugin 'gabesoft/vim-ags'
-Plugin 'mustache/vim-mustache-handlebars'
+Plug 'kien/ctrlp.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'gabesoft/vim-ags'
+Plug 'mustache/vim-mustache-handlebars'
 
 " Colorschemes
-Plugin 'NLKNguyen/papercolor-theme'
+Plug 'NLKNguyen/papercolor-theme'
 
-call vundle#end()
-filetype plugin indent on
-
+call plug#end()
 
 " General --------------
 syntax enable
 set modelines=0 " security see http://www.techrepublic.com/blog/security/turn-off-modeline-support-in-vim/4476
-set guioptions-=T " go away toolbar
+set guioptions-=T " disable toolbar
 set guifont=Menlo\ Regular:h12
 set background=light
 colorscheme molokai
-set history=500 " i like history
+set history=500 " increase history
 set laststatus=2 " statusline ftw
-let mapleader = ',' " leader key
+let mapleader = ','
 set hidden " put buffer in background without write
 set timeoutlen=10000 " extra long to notice overrides
 set cpoptions+=$ " indicate end of change command with $ sign
 set autoread " load changed files automatically
+set encoding=utf-8
 
 " Line numbers
 set number
@@ -73,7 +64,7 @@ set autoindent
 " Invisible ------------
 set list
 nmap <leader>l :set list!<CR> " toogle set list
-set listchars=tab:▸\ ,eol:¬ " show tabs and trailing
+set listchars=tab:▸\ ,eol:¬ " show tabs and eol
 
 " highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red

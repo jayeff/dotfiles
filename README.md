@@ -1,7 +1,7 @@
 Dotfiles
 ========
 
-Install notes:
+Setup symlinks:
 
     ln -s ~/dotfiles/vimrc ~/.vimrc
     ln -s ~/dotfiles/vim ~/.vim
@@ -13,8 +13,8 @@ Install notes:
     ln -s ~/dotfiles/gitignore_global ~/.gitignore_global
     ln -s ~/dotfiles/git_template ~/.git_template
 
-Install additional Vim Plugins:
+Install vim plugins:
 
-* Update `vimrc`
-* Start Vim
-* Run `:PluginInstall`
+* Initial setup: Install vim-plug: `curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
+* Run `vim +PlugInstall +qall`
